@@ -1,0 +1,199 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --true-white: #ffffff;
+  --purple-dark: #1513a0;
+  --purple-blue-gradient: linear-gradient(
+    180deg,
+    rgba(96, 93, 236, 1) 0%,
+    rgba(42, 38, 217, 1) 100%
+  );
+  --purple-blue: #605dec;
+  --purple-light: #bcbaf7;
+  --purple-extra-light: #e9e8fc;
+  --purple-white: #f6f6fe;
+  --blue: #407aea;
+  --turquoise-gradient: linear-gradient(
+    180deg,
+    rgba(92, 214, 192, 1) 0%,
+    rgba(34, 195, 166, 1) 100%
+  );
+  --turquoise: #5cd6c0;
+  --pink-gradient: linear-gradient(
+    180deg,
+    rgba(235, 86, 140, 1) 0%,
+    rgba(237, 94, 118, 1) 100%
+  );
+  --red: #eb5757;
+  --grey-2: rgba(82, 82, 122, 0.2);
+  --red-light: #fdefef;
+  --purple-white-light: #fafafe;
+  --illustration-world-map: undefined;
+  --deep-green: #007b65;
+  --grey-900: #27273f;
+  --grey-800: #36374a;
+  --grey-700: #52556f;
+  --grey-600: #6e7491;
+  --grey-500: #657491;
+  --grey-400: #7c8db0;
+  --grey-300: #a1b0cc;
+  --grey-200: #cbd4e6;
+  --grey-100: #fafafa;
+  --brand-gradient-b: undefined;
+  --brand-gradient-a: undefined;
+  --primary-900: #053358;
+  --primary-800: #074c83;
+  --primary-700: #0966af;
+  --primary-600: #0c7fda;
+  --primary-500: #2196f3;
+  --primary-400: #48a8f5;
+  --primary-300: #6ebbf7;
+  --primary-200: #95cdf9;
+  --primary-50: #cfe8fc;
+  --primary-0: #fafdff;
+  --primary-100: #bcdffb;
+  --gray-900: #1d242a;
+  --gray-800: #323e48;
+  --gray-600: #5c7184;
+  --gray-700: #475866;
+  --gray-500: #758b9f;
+  --gray-400: #90a2b2;
+  --gray-300: #abb8c4;
+  --gray-200: #c6cfd7;
+  --gray-100: #e1e6ea;
+  --gray-50: #f0f3f5;
+  --gray-0: #ffffff;
+  --support-green: #007f5f;
+  --support-red: #ba2d0b;
+  --support-yellow: #f49d37;
+
+  /* Fonts */
+  --body-large-font-family: NunitoSans-Regular, sans-serif;
+  --body-large-font-size: 18px;
+  --body-large-line-height: normal;
+  --body-large-font-weight: 400;
+  --body-large-font-style: normal;
+  --body-default-font-family: NunitoSans-Regular, sans-serif;
+  --body-default-font-size: 16px;
+  --body-default-line-height: normal;
+  --body-default-font-weight: 400;
+  --body-default-font-style: normal;
+  --body-small-font-family: NunitoSans-Regular, sans-serif;
+  --body-small-font-size: 14px;
+  --body-small-line-height: normal;
+  --body-small-font-weight: 400;
+  --body-small-font-style: normal;
+  --body-extra-small-font-family: NunitoSans-Regular, sans-serif;
+  --body-extra-small-font-size: 12px;
+  --body-extra-small-line-height: normal;
+  --body-extra-small-font-weight: 400;
+  --body-extra-small-font-style: normal;
+  --footer-header-font-family: NunitoSans-Bold, sans-serif;
+  --footer-header-font-size: 18px;
+  --footer-header-line-height: normal;
+  --footer-header-font-weight: 700;
+  --footer-header-font-style: normal;
+  --header-h-1-font-family: NunitoSans-SemiBold, sans-serif;
+  --header-h-1-font-size: 36px;
+  --header-h-1-line-height: normal;
+  --header-h-1-font-weight: 600;
+  --header-h-1-font-style: normal;
+  --header-h-2-font-family: NunitoSans-SemiBold, sans-serif;
+  --header-h-2-font-size: 32px;
+  --header-h-2-line-height: normal;
+  --header-h-2-font-weight: 600;
+  --header-h-2-font-style: normal;
+  --header-h-3-font-family: NunitoSans-Bold, sans-serif;
+  --header-h-3-font-size: 24px;
+  --header-h-3-line-height: normal;
+  --header-h-3-font-weight: 700;
+  --header-h-3-font-style: normal;
+  --header-h-4-font-family: NunitoSans-SemiBold, sans-serif;
+  --header-h-4-font-size: 18px;
+  --header-h-4-line-height: normal;
+  --header-h-4-font-weight: 600;
+  --header-h-4-font-style: normal;
+  --header-h-5-font-family: NunitoSans-SemiBold, sans-serif;
+  --header-h-5-font-size: 16px;
+  --header-h-5-line-height: normal;
+  --header-h-5-font-weight: 600;
+  --header-h-5-font-style: normal;
+  --header-h-6-font-family: NunitoSans-SemiBold, sans-serif;
+  --header-h-6-font-size: 14px;
+  --header-h-6-line-height: normal;
+  --header-h-6-font-weight: 600;
+  --header-h-6-font-style: normal;
+  --body-extra-large-font-family: NunitoSans-Regular, sans-serif;
+  --body-extra-large-font-size: 24px;
+  --body-extra-large-line-height: normal;
+  --body-extra-large-font-weight: 400;
+  --body-extra-large-font-style: normal;
+  --display-font-family: Epilogue-Bold, sans-serif;
+  --display-font-size: 69px;
+  --display-line-height: 96px;
+  --display-font-weight: 700;
+  --display-font-style: normal;
+  --button-font-family: Poppins-SemiBold, sans-serif;
+  --button-font-size: 16px;
+  --button-line-height: 24px;
+  --button-font-weight: 600;
+  --button-font-style: normal;
+  --heading-1-font-family: Epilogue-Bold, sans-serif;
+  --heading-1-font-size: 58px;
+  --heading-1-line-height: 58px;
+  --heading-1-font-weight: 700;
+  --heading-1-font-style: normal;
+  --heading-2-font-family: Epilogue-Bold, sans-serif;
+  --heading-2-font-size: 48px;
+  --heading-2-line-height: 72px;
+  --heading-2-font-weight: 700;
+  --heading-2-font-style: normal;
+  --heading-3-font-family: Epilogue-Bold, sans-serif;
+  --heading-3-font-size: 40px;
+  --heading-3-line-height: 64px;
+  --heading-3-font-weight: 700;
+  --heading-3-font-style: normal;
+  --heading-4-font-family: Epilogue-Bold, sans-serif;
+  --heading-4-font-size: 34px;
+  --heading-4-line-height: 48px;
+  --heading-4-font-weight: 700;
+  --heading-4-font-style: normal;
+  --heading-5-font-family: Epilogue-Bold, sans-serif;
+  --heading-5-font-size: 28px;
+  --heading-5-line-height: 42px;
+  --heading-5-font-weight: 700;
+  --heading-5-font-style: normal;
+  --heading-6-font-family: Epilogue-Bold, sans-serif;
+  --heading-6-font-size: 24px;
+  --heading-6-line-height: 32px;
+  --heading-6-font-weight: 700;
+  --heading-6-font-style: normal;
+  --body-l-font-family: Poppins-Regular, sans-serif;
+  --body-l-font-size: 20px;
+  --body-l-line-height: 32px;
+  --body-l-font-weight: 400;
+  --body-l-font-style: normal;
+  --body-m-font-family: Poppins-Regular, sans-serif;
+  --body-m-font-size: 16px;
+  --body-m-line-height: 24px;
+  --body-m-font-weight: 400;
+  --body-m-font-style: normal;
+  --body-s-font-family: Poppins-Regular, sans-serif;
+  --body-s-font-size: 14px;
+  --body-s-line-height: 20px;
+  --body-s-font-weight: 400;
+  --body-s-font-style: normal;
+
+  /* Effects */
+  --background-blur-backdrop-filter: blur(12px);
+  --shadow-card-1-box-shadow: 0px 32px 40px -2px rgba(0, 0, 0, 0.08),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.08);
+  --shadow-1-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+  --elevation-medium-box-shadow: 0px 12px 24px 0px rgba(27, 59, 119, 0.05),
+    0px 24px 60px 0px rgba(6, 47, 125, 0.05),
+    0px 2px 4px 0px rgba(7, 4, 146, 0.1);
+  --elevation-light-box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05),
+    0px 2px 4px 0px rgba(28, 5, 77, 0.1);
+  --elevation-ultralight-box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.02),
+    0px 2px 2px 0px rgba(28, 5, 77, 0.05);
+}
