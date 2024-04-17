@@ -1,0 +1,144 @@
+/* Layout */
+.div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+.div-wrapper .desktop-full {
+  display: none;
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 1024px) {
+  .div-wrapper {
+    padding: 0;
+  }
+  .div-wrapper .desktop {
+    display: none;
+  }
+  .div-wrapper .desktop-full {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+}
+
+/* Component Styles */
+.div-wrapper .nav-navigation-menu,
+.div-wrapper .nav-list-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.div-wrapper .label,
+.div-wrapper .text-wrapper {
+  position: relative;
+  font-family: var(--body-default-font-family);
+  font-weight: var(--body-default-font-weight);
+  font-size: var(--body-default-font-size);
+  letter-spacing: var(--body-default-letter-spacing);
+  line-height: var(--body-default-line-height);
+  font-style: var(--body-default-font-style);
+}
+
+.div-wrapper .button,
+.div-wrapper .button-text-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  position: relative;
+  background-color: var(--blue);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.div-wrapper .button-text {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  font-family: var(--button-font-family);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  letter-spacing: var(--button-letter-spacing);
+  line-height: var(--button-line-height);
+  text-align: center;
+  white-space: nowrap;
+  font-style: var(--button-font-style);
+}
+
+.div-wrapper .our-feature {
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: var(--primary-500);
+  font-size: 20px;
+}
+
+.div-wrapper .easy-way-to-invest {
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  color: var(--gray-900);
+  font-size: var(--heading-3-font-size);
+}
+
+.div-wrapper .using-the-robostock {
+  font-family: var(--body-m-font-family);
+  font-weight: var(--body-m-font-weight);
+  color: var(--gray-600);
+  font-size: var(--body-m-font-size);
+}
+
+.div-wrapper .group {
+  width: 600px;
+  height: 439px;
+  background-image: url(https://c.animaapp.com/ebA20gBS/img/unsplash-gw-sfen8vhu.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.div-wrapper .footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 120px 24px;
+}
+
+.div-wrapper .footer-header,
+.div-wrapper .list-item {
+  font-family: var(--footer-header-font-family);
+  font-weight: var(--footer-header-font-weight);
+  color: var(--grey-600);
+  font-size: var(--footer-header-font-size);
+}
+
+.div-wrapper .footer-link-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+}
+
+.div-wrapper .link-app-store,
+.div-wrapper .link-google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.div-wrapper .download-on-the,
+.div-wrapper .app-store {
+  position: absolute;
+}
+
+/* Add more styles as needed */

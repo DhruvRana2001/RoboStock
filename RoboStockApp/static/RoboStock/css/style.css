@@ -1,414 +1,236 @@
-.div-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-  position: relative;
-  background-color: #ffffff;
-  width: 100%;
-  height: auto;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.div-wrapper .desktop-full {
-  display: flex;
-  width: 1440px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 24px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--true-white);
+/* Body Styles */
+body {
+    font-family: var(--body-default-font-family);
+    font-size: var(--body-default-font-size);
+    font-weight: var(--body-default-font-weight);
+    line-height: var(--body-default-line-height);
+    letter-spacing: var(--body-default-letter-spacing);
+    font-style: var(--body-default-font-style);
+    color: var(--pure-white);
 }
 
-.div-wrapper .robo-stock-logo {
-  position: relative;
-  width: 92px;
-  height: 88px;
+nav {
+    background: var(--true-white);
+    padding: 12px 0;
+    width: 100%;
+    
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
 }
 
-.div-wrapper .nav-navigation-menu {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
-  position: relative;
-  flex: 0 0 auto;
+
+nav .menu .logo a img.robo-stock-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
-.div-wrapper .nav-list-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-  flex: 0 0 auto;
+nav .menu {
+    max-width: 1270px;
+    padding: 0 20px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.div-wrapper .label {
-  margin-top: -1px;
-  color: var(--grey-400);
-  text-align: center;
-  position: relative;
-  width: fit-content;
-  font-family: var(--body-default-font-family);
-  font-weight: var(--body-default-font-weight);
-  font-size: var(--body-default-font-size);
-  letter-spacing: var(--body-default-letter-spacing);
-  line-height: var(--body-default-line-height);
-  font-style: var(--body-default-font-style);
+.menu ul {
+    list-style: none;
+    display: flex;
 }
 
-.div-wrapper .button {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  height: 48px;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 20px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--blue);
-  border-radius: 4px;
-  overflow: hidden;
+.menu ul li a {
+    color: var(--grey-300);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    font-family: var(--button-font-family);
+    border-radius: 3px;
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px 14px;
+    text-decoration: none;
+    background: var(--grey-100);
+    position: relative;
+    box-shadow: -3px -3px 7px var(--true-white), 
+                3px 3px 5px var(--grey-200);
 }
 
-.div-wrapper .text-wrapper {
-  color: var(--grey-100);
-  position: relative;
-  width: fit-content;
-  font-family: var(--body-default-font-family);
-  font-weight: var(--body-default-font-weight);
-  font-size: var(--body-default-font-size);
-  letter-spacing: var(--body-default-letter-spacing);
-  line-height: var(--body-default-line-height);
-  font-style: var(--body-default-font-style);
+.menu ul li a:hover {
+    color: var(--true-white);
+    background: var(--primary-200);
+    transition: 0.5s;
 }
 
-.div-wrapper .desktop {
-  display: flex;
-  flex-direction: column;
-  width: 1439px;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-  padding: 8px 0px 100px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #ffffff;
+.menu ul li a:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    box-shadow: inset -3px -3px 7px var(--primary-100), 
+                inset 3px 3px 5px var(--primary-300);
 }
 
-.div-wrapper .frame {
-  width: 1151px;
-  justify-content: space-between;
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
+nav label.btn {
+    color: var(--grey-600);
+    cursor: pointer;
+    display: none;
+    font-size: var(--button-font-size);
 }
 
-.div-wrapper .content {
-  position: relative;
-  width: 471px;
-  height: 330px;
+nav label.close {
+    position: absolute;
+    top : 20px;
+    left: 30px;
 }
 
-.div-wrapper .div {
-  flex-direction: column;
-  width: 471px;
-  gap: 24px;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
+#check {
+    display: none;
 }
 
-.div-wrapper .frame-2 {
-  flex-direction: column;
-  gap: 12px;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
+.menu ul li a.active {
+    background: var(--primary-500);
+    color: var(--true-white);
 }
 
-.div-wrapper .frame-3 {
-  flex-direction: column;
-  gap: 8px;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
+/* Footer Styles */
+.footer-header {
+    font-family: var(--footer-header-font-family);
+    font-weight: var(--footer-header-font-weight);
+    color: var(--grey-600);
+    font-size: var(--footer-header-font-size);
+    margin-bottom: 20px;
 }
 
-.div-wrapper .our-feature {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 600;
-  color: var(--primary-500);
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
+.list-item, .footer-column .robo-stock-logo {
+    color: var(--grey-300);
 }
 
-.div-wrapper .easy-way-to-invest {
-  position: relative;
-  align-self: stretch;
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  color: var(--gray-900);
-  font-size: var(--heading-3-font-size);
-  letter-spacing: var(--heading-3-letter-spacing);
-  line-height: var(--heading-3-line-height);
-  font-style: var(--heading-3-font-style);
+footer .robo-stock-logo {
+    width: 100%;
+    height: auto;
 }
 
-.div-wrapper .using-the-robostock {
-  position: relative;
-  align-self: stretch;
-  font-family: var(--body-m-font-family);
-  font-weight: var(--body-m-font-weight);
-  color: var(--gray-600);
-  font-size: var(--body-m-font-size);
-  letter-spacing: var(--body-m-letter-spacing);
-  line-height: var(--body-m-line-height);
-  font-style: var(--body-m-font-style);
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.div-wrapper .button-text-wrapper {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 32px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--primary-500);
-  border-radius: 8px;
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
 }
 
-.div-wrapper .button-text {
-  all: unset;
-  box-sizing: border-box;
-  position: relative;
-  width: fit-content;
-  margin-top: -2px;
-  font-family: var(--button-font-family);
-  font-weight: var(--button-font-weight);
-  color: var(--foregroundnight900-high-emphasis);
-  font-size: var(--button-font-size);
-  text-align: center;
-  letter-spacing: var(--button-letter-spacing);
-  line-height: var(--button-line-height);
-  white-space: nowrap;
-  font-style: var(--button-font-style);
+.footer-column {
+    flex: 1 1 25%;
+    margin-bottom: 20px;
+    padding: 0 10px;
 }
 
-.div-wrapper .group {
-  position: relative;
-  width: 600px;
-  height: 439px;
-  background-image: url(https://c.animaapp.com/ebA20gBS/img/unsplash-gw-sfen8vhu.png);
-  background-size: cover;
-  background-position: 50% 50%;
+.footer-divider {
+    width: 100%;
+    margin-top: 20px;
 }
 
-.div-wrapper .mywebsite-desktop {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  align-items: flex-start;
-  gap: 17px;
-  padding: 16px 0px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #ffffff;
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
 }
 
-.div-wrapper .footer-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 60px 120px 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+.social-media-stack img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
-.div-wrapper .img {
-  position: relative;
-  width: 146px;
-  height: 139px;
+.copyright {
+    color: var(--grey-600);
 }
 
-.div-wrapper .div-2 {
-  gap: 8px;
-  padding: 16px 16px 16px 0px;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  align-items: flex-start;
-  position: relative;
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-column {
+        flex-basis: 50%;
+    }
 }
 
-.div-wrapper .div-3 {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 4px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+@media (max-width: 480px) {
+    .footer-column {
+        flex-basis: 100%;
+    }
 }
 
-.div-wrapper .footer-header {
-  position: relative;
-  flex: 1;
-  margin-top: -1px;
-  font-family: var(--footer-header-font-family);
-  font-weight: var(--footer-header-font-weight);
-  color: var(--grey-600);
-  font-size: var(--footer-header-font-size);
-  letter-spacing: var(--footer-header-letter-spacing);
-  line-height: var(--footer-header-line-height);
-  font-style: var(--footer-header-font-style);
-}
+@media (max-width: 950px) {
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 425px;
+        height: 100%;
+        padding-top: 10px;
+        background: var(--gray-100);
+        z-index: 12;
+        transition: all 0.8s ease;
+    }
 
-.div-wrapper .list-item {
-  position: relative;
-  flex: 1;
-  margin-top: -1px;
-  font-family: var(--body-default-font-family);
-  font-weight: var(--body-default-font-weight);
-  color: var(--grey-400);
-  font-size: var(--body-default-font-size);
-  letter-spacing: var(--body-default-letter-spacing);
-  line-height: var(--body-default-line-height);
-  font-style: var(--body-default-font-style);
-}
+    .menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.div-wrapper .column-mobile {
-  gap: 12px;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  align-items: flex-start;
-  position: relative;
-}
+    .menu ul li a {
+        display: flex;
+        font-size: 20px;
+        margin-top: 30px;
+        width : fit-content;
+        box-shadow: none;
+        text-align: center;
+        background: var(--gray-100);
+    }
 
-.div-wrapper .footer-link-column {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 16px 16px 16px 0px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-right: -50px;
-}
+    .menu ul li a:hover, .menu ul li a.active {
+        background: var(--gray-100);
+        color: var(--primary-500);
+    }
 
-.div-wrapper .link-app-store {
-  position: relative;
-  width: 135px;
-  height: 40px;
-  background-color: #000000;
-  border-radius: 4px;
-  border: 1px solid;
-  border-color: #a1a1a1;
-}
+    .menu ul li a:hover {
+        color: var(--primary-400);
+    }
 
-.div-wrapper .element-apple-mac {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 4px;
-  left: 8px;
-}
+    .menu ul li a:hover::before {
+        box-shadow: none;
+    }
 
-.div-wrapper .download-on-the {
-  position: absolute;
-  width: 75px;
-  height: 7px;
-  top: 7px;
-  left: 44px;
-}
+    nav label.menu {
+        display: block;
+    }
 
-.div-wrapper .app-store {
-  position: absolute;
-  width: 80px;
-  height: 17px;
-  top: 18px;
-  left: 43px;
-}
+    #check:checked ~ label.menu {
+        display: none; 
+    }
 
-.div-wrapper .link-google-play {
-  position: relative;
-  width: 135px;
-  height: 40px;
-  background-image: url(https://c.animaapp.com/ebA20gBS/img/link---google-play-2@2x.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
+    #check:checked ~ ul label.close {
+        display: block; 
+    }
 
-.div-wrapper .footer-divider {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 1px;
-}
+    #check:checked ~ ul {
+        right: 0;
+        transition: all 0.8s ease;
+    }
 
-.div-wrapper .bottom {
-  display: flex;
-  height: 64px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 120px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-}
-
-.div-wrapper .social-media-stack {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.div-wrapper .img-2 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.div-wrapper .union {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 1px;
-  left: 1px;
-}
-
-.div-wrapper .copyright {
-  position: relative;
-  width: fit-content;
-  font-family: "Nunito Sans", Helvetica;
-  font-weight: 400;
-  color: var(--grey-400);
-  font-size: 18px;
-  text-align: right;
-  letter-spacing: 0;
-  line-height: normal;
 }
