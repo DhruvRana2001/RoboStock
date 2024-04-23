@@ -1,0 +1,135 @@
+/* Heading Styles */
+h1 {
+    font-family: var(--heading-1-font-family);
+    font-weight: var(--heading-1-font-weight);
+    font-size: var(--heading-1-font-size);
+    letter-spacing: var(--heading-1-letter-spacing);
+    line-height: var(--heading-1-line-height);
+}
+
+h2 {
+    font-family: var(--heading-2-font-family);
+    font-weight: var(--heading-2-font-weight);
+    font-size: var(--heading-2-font-size);
+    letter-spacing: var(--heading-2-letter-spacing);
+    line-height: var(--heading-2-line-height);
+}
+
+h3 {
+    font-family: var(--heading-3-font-family);
+    font-weight: var(--heading-3-font-weight);
+    font-size: var(--heading-3-font-size);
+    letter-spacing: var(--heading-3-letter-spacing);
+    line-height: var(--heading-3-line-height);
+}
+
+h4 {
+    font-family: var(--heading-4-font-family);
+    font-weight: var(--heading-4-font-weight);
+    font-size: var(--heading-4-font-size);
+    letter-spacing: var(--heading-4-letter-spacing);
+    line-height: var(--heading-4-line-height);
+}
+
+h5 {
+    font-family: var(--heading-5-font-family);
+    font-weight: var(--heading-5-font-weight);
+    font-size: var(--heading-5-font-size);
+    letter-spacing: var(--heading-5-letter-spacing);
+    line-height: var(--heading-5-line-height);
+}
+
+h6 {
+    font-family: var(--heading-6-font-family);
+    font-weight: var(--heading-6-font-weight);
+    font-size: var(--heading-6-font-size);
+    letter-spacing: var(--heading-6-letter-spacing);
+    line-height: var(--heading-6-line-height);
+}
+
+/* Body Styles */
+body.extra-large {
+    font-family: var(--body-extra-large-font-family);
+    font-size: var(--body-extra-large-font-size);
+    font-weight: var(--body-extra-large-font-weight);
+    line-height: var(--body-extra-large-line-height);
+    letter-spacing: var(--body-extra-large-letter-spacing);
+    font-style: var(--body-extra-large-font-style);
+}
+
+body.large {
+    font-family: var(--body-large-font-family);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--body-large-font-weight);
+    line-height: var(--body-large-line-height);
+    letter-spacing: var(--body-large-letter-spacing);
+    font-style: var(--body-large-font-style);
+}
+
+body {
+    font-family: var(--body-default-font-family);
+    font-size: var(--body-default-font-size);
+    font-weight: var(--body-default-font-weight);
+    line-height: var(--body-default-line-height);
+    letter-spacing: var(--body-default-letter-spacing);
+    font-style: var(--body-default-font-style);
+}
+
+body.small {
+    font-family: var(--body-small-font-family);
+    font-size: var(--body-small-font-size);
+    font-weight: var(--body-small-font-weight);
+    line-height: var(--body-small-line-height);
+    letter-spacing: var(--body-small-letter-spacing);
+    font-style: var(--body-small-font-style);
+}
+
+body.extra-small {
+    font-family: var(--body-extra-small-font-family);
+    font-size: var(--body-extra-small-font-size);
+    font-weight: var(--body-extra-small-font-weight);
+    line-height: var(--body-extra-small-line-height);
+    letter-spacing: var(--body-extra-small-letter-spacing);
+    font-style: var(--body-extra-small-font-style);
+}
+
+/* Footer Styles */
+footer {
+    font-family: var(--footer-header-font-family);
+    font-size: var(--footer-header-font-size);
+    font-weight: var(--footer-header-font-weight);
+    line-height: var(--footer-header-line-height);
+    letter-spacing: var(--footer-header-letter-spacing);
+    font-style: var(--footer-header-font-style);
+}
+
+/* Header Styles */
+header {
+    font-family: var(--footer-header-font-family);
+    font-size: var(--footer-header-font-size);
+    font-weight: var(--footer-header-font-weight);
+    line-height: var(--footer-header-line-height);
+    letter-spacing: var(--footer-header-letter-spacing);
+    font-style: var(--footer-header-font-style);
+}
+
+/* Button Styles */
+button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    line-height: var(--button-line-height);
+    letter-spacing: var(--button-letter-spacing);
+    font-style: var(--button-font-style);
+}
+
+/* paragraph styles */
+p {
+    font-family: var(--body-default-font-family);
+    font-size: var(--body-default-font-size);
+    font-weight: var(--body-default-font-weight);
+    line-height: var(--body-default-line-height);
+    letter-spacing: var(--body-default-letter-spacing);
+    font-style: var(--body-default-font-style);
+    color: gray;
+}

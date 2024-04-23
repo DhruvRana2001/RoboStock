@@ -1,0 +1,98 @@
+{%extends 'base.html'%}
+
+{%block title%}
+    RoboStock
+{%endblock%}
+
+{%block header%}
+    {%include 'includes/header.html' with active_page='about-us'%}
+{%endblock%}
+
+{%block content%}
+{% load static %}
+
+<div class="container">
+    <div class="top-container">
+        <h3> A trading partner you can trust </h3>
+   
+        <p class="description"> 
+            At RoboStock, we rigorously focus on quality and transparency.
+            Our order execution quality is independently monitored. Order execution with high quality means: you save money with every investment you make with RoboStock. 
+        </p>
+    </div>
+
+    <div class="bottom-container">
+        <div class="bottom-left">
+            
+            <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8003 44.2667H31.1003V68.2667C31.1003 73.8667 34.1336 75 37.8336 70.8L63.067 42.1333C66.167 38.6333 64.867 35.7333 60.167 35.7333H49.867V11.7333C49.867 6.13334 46.8336 5 43.1336 9.2L17.9003 37.8667C14.8336 41.4 16.1336 44.2667 20.8003 44.2667Z" stroke="#2196F3" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            <h5> Quality execution on every trade </h5>
+            
+            <p class="description"> 
+                Backed by multiple analyzes and precise algorithms providing quality execution decisions on every trade. 
+                Guarantee your comfort and perfection in making decisions. 
+            </p>
+        </div>
+
+        <div class="bottom-right">
+            
+            <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M67.1667 36.6667C67.1667 53.2333 53.7334 66.6667 37.1667 66.6667C20.6001 66.6667 7.16675 53.2333 7.16675 36.6667C7.16675 20.1 20.6001 6.66666 37.1667 6.66666" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M63.5998 68.966C65.3665 74.2994 69.3998 74.8327 72.4998 70.166C75.3332 65.8994 73.4665 62.3994 68.3332 62.3994C64.5332 62.366 62.3998 65.3327 63.5998 68.966Z" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M47.1667 16.6667H67.1667" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M47.1667 26.6667H57.1667" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            <h5>Transperent & competitive pricing</h5>
+            
+            <p class="description"> 
+                Provides transparency Pricing Emphasizes Value, not Price. 
+                As price becomes clearer to everyone in the market, each competitor's value also comes into sharper focus.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="frame">
+
+    <div class="feat_img">
+        <img src="{% static "RoboStock/Images/img.png" %}" alt="img" class="feature_img">
+    </div>
+
+    <div class="feature">
+        
+            <p class="easy-way-to-invest">Our Vision</p>
+            <p class="using-the-robostock">
+                Our vision is to become a trusted advisor, intermediary, and partner to assist customers in determining financial strategies in the capital market and 
+                Become a professional reinsurance broker with a global reputation
+            </p>
+    </div>  
+    
+</div>
+
+<div class="frame">
+
+    <div class="feature">
+        
+            <p class="easy-way-to-invest">Our Mission</p>
+            <p class="using-the-robostock">
+                Providing excellent service from risk placement to settlement of compensation in the interest of obtaining the best capital market results. 
+                Maintain the profitability of each user with the aim of meeting the expectations of each user
+            </p>
+    </div>  
+    
+
+    <div class="feat_img">
+        <img src="{% static "RoboStock/Images/img_1.png" %}" alt="img_1" class="feature_img">
+    </div>
+
+</div>
+
+{%endblock%}
+
+{%block footer%}
+    {%include 'includes/footer.html'%}
+{%endblock%}
