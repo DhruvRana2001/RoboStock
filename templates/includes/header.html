@@ -5,16 +5,17 @@
             {% load static %}
             <div class="logo">
                 <a href="{% url 'home' %}">
-                    <img class="robo-stock-logo" src="{% static 'RoboStock/Images/RoboStock Logo (Black)/Color logo - no background.svg' %}" alt="RoboStock Logo">
+                    <!--<img class="robo-stock-logo" src="{% static 'RoboStock/Images/RoboStock Logo (Black)/Color logo - no background.svg' %}" alt="RoboStock Logo">-->
+                    <img class="robo-stock-logo" src="{% static "RoboStock/Images/RoboStock Logo (Purple)/robostocklogo.svg" %}" alt="RoboStock Logo">
                 </a>
             </div>
             <ul>
+                <li><a {% if active_page == 'home' %}class="active"{% endif %}  href="{% url 'home' %}">Home</a></li>
+                <li><a {% if active_page == 'about-us' %}class="active"{% endif %} href="{% url 'about-us' %}">About Us</a></li>
+                <li><a {% if active_page == 'help' %}class="active"{% endif %} href="{% url 'help' %}">Help</a></li>
+                <li><a {% if active_page == 'sign-in' %}class="active"{% endif %} href="{% url 'sign-in' %}">Sign In</a></li>
+                <li><button class="sign_up"><a {% if active_page == 'sign-up' %}class="active"{% endif %} href="{% url 'sign-up' %}">Sign up</a></button></li>
                 <label class = "btn close" for="check"><i class = "fas fa-times"></i></label>
-                <li><a class="active" href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about-us' %}">About Us</a></li>
-                <li><a href="{% url 'help' %}">Help</a></li>
-                <li><a href="{% url 'sign-in' %}">Sign In</a></li>
-                <li><a href="{% url 'sign-up' %}">Sign up</a></li>
             </ul>
 
             <label class = "btn menu" for="check"><i class = "fas fa-bars"></i></label>    

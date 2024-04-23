@@ -5,11 +5,32 @@
 {%endblock%}
 
 {%block header%}
-    {%include 'includes/header.html'%}
+    {%include 'includes/header.html' with active_page='home'%}
 {%endblock%}
 
 {%block content%}
-    <p>RoboStock</p>
+{% load static %}
+    
+    <div class="frame">
+
+        <div class="feature">
+            
+            <div class="our-feature">OUR FEATURE</div>
+                <p class="easy-way-to-invest">Easy Way to Invest<br>and Get Profit</p>
+                <p class="using-the-robostock">
+                    Using the RoboStock Application is an easy way to invest <br>and benefit, equipped with
+                    comprehensive analysis tools and Artificial Intelligent (AI).
+                </p>
+                <button class="button-text-wrapper"><span class="button-text">Get Started</span></button>
+        </div>  
+        
+
+        <div class="feat_img">
+            <img src="{% static "RoboStock/Images/img_1.png" %}" alt="img_1" class="feature_img">
+        </div>
+
+    </div>
+
 {%endblock%}
 
 {%block footer%}

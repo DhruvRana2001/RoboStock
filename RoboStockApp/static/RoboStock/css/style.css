@@ -26,8 +26,8 @@ nav {
 
 
 nav .menu .logo a img.robo-stock-logo {
-    width: 100%;
-    max-width: 200px;
+    max-width: 60%;
+    width: auto;
     height: auto;
 }
 
@@ -56,28 +56,34 @@ nav .menu {
     display: inline-flex;
     padding: 10px 14px;
     text-decoration: none;
-    background: var(--grey-100);
     position: relative;
-    box-shadow: -3px -3px 7px var(--true-white), 
-                3px 3px 5px var(--grey-200);
 }
 
 .menu ul li a:hover {
-    color: var(--true-white);
-    background: var(--primary-200);
+    color: var(--primary-200);
     transition: 0.5s;
 }
 
-.menu ul li a:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.menu button.sign_up {
+    background: var(--primary-500);
+    color: var(--true-white);
+    border: none;
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    font-family: var(--button-font-family);
     border-radius: 3px;
-    box-shadow: inset -3px -3px 7px var(--primary-100), 
-                inset 3px 3px 5px var(--primary-300);
+    cursor: pointer;
+}
+
+.menu button.sign_up a {
+    background: var(--primary-500);
+    color: var(--true-white);
+    border: none;
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    font-family: var(--button-font-family);
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 nav label.btn {
@@ -97,10 +103,12 @@ nav label.close {
     display: none;
 }
 
+/*
 .menu ul li a.active {
     background: var(--primary-500);
     color: var(--true-white);
 }
+*/
 
 /* Footer Styles */
 .footer-header {
@@ -116,8 +124,8 @@ nav label.close {
 }
 
 footer .robo-stock-logo {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .footer-links ul {
@@ -149,6 +157,12 @@ footer .robo-stock-logo {
     padding: 20px 10px;
 }
 
+.bottom .social-media-stack {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .social-media-stack img {
     width: 24px;
     height: 24px;
@@ -157,6 +171,47 @@ footer .robo-stock-logo {
 
 .copyright {
     color: var(--grey-600);
+}
+
+/* Index */
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.frame .feature {
+    background: rgba(255, 0, 0, 0.104);
+}
+
+.feature .our-feature {
+    font-family: var(--footer-header-font-family);
+    font-weight: var(--footer-header-font-weight);
+    color: var(--primary-600);
+    font-size: var(--footer-header-font-size);
+    margin-bottom: 20px;
+}
+
+.feature .easy-way-to-invest {
+    font-family: var(--heading-3-font-family);
+    font-weight: var(--heading-3-font-weight);
+    color: var(--gray-900);
+    font-size: var(--heading-3-font-size);
+    margin-bottom: 20px;
+}
+
+.frame .feat_img {
+    background: blue;
+    max-width: 50%;
+}
+
+.frame .feat_img img.feature_img {
+    background: aqua;
+    opacity: 0.5;
+    width : 100%;
+    height: auto;
 }
 
 /* Media Queries */
@@ -216,6 +271,28 @@ footer .robo-stock-logo {
         box-shadow: none;
     }
 
+    .menu button.sign_up {
+        background: none;
+        color: none;
+        border: none;
+        font-size: var(--button-font-size);
+        font-weight: var(--button-font-weight);
+        font-family: var(--button-font-family);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .menu button.sign_up a {
+        background: none;
+        color: var(--gray-100);
+        border: none;
+        font-size: var(--button-font-size);
+        font-weight: var(--button-font-weight);
+        font-family: var(--button-font-family);
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
     nav label.menu {
         display: block;
     }
