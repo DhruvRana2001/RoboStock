@@ -115,12 +115,26 @@ header {
 
 /* Button Styles */
 button {
-    font-family: var(--button-font-family);
+    background: var(--primary-500);
+    color: var(--true-white);
+    border: none;
     font-size: var(--button-font-size);
     font-weight: var(--button-font-weight);
-    line-height: var(--button-line-height);
-    letter-spacing: var(--button-letter-spacing);
-    font-style: var(--button-font-style);
+    font-family: var(--button-font-family);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+button a {
+    background: var(--primary-500);
+    color: var(--true-white);
+    border: none;
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    font-family: var(--button-font-family);
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 /* paragraph styles */
@@ -131,5 +145,5 @@ p {
     line-height: var(--body-default-line-height);
     letter-spacing: var(--body-default-letter-spacing);
     font-style: var(--body-default-font-style);
-    color: gray;
+    color: var(--grey-300);
 }

@@ -10,8 +10,24 @@
 
 {%block content%}
 {% load static %}
-    
+
+<div class="search" style="background-image: url({% static 'RoboStock/Images/img_3.png' %});">
+    <div class="frame">
+        <div class="feature">
+            <div class="our-feature">Support Center</div>
+            <p class="easy-way-to-invest">Welcome to the RoboStock Support Center, Can I help you?</p>
+            <div class="search-bar">
+                <div class="serach-button"><i class="fa fa-search"></i></div>
+                <input type="text" placeholder="Enter the topic you want to search for">
+            </div>
+        </div>  
+    </div>
+</div>
+
 <div class="frame">
+    <div class="feat_img">
+        <img src="{% static "RoboStock/Images/image_1.png" %}" alt="image_1" class="feature_img">
+    </div>
 
     <div class="feature">
             <p class="easy-way-to-invest">Glosarium Trading</p>
@@ -21,12 +37,12 @@
             </p>
             <button class="button-text-wrapper"><a href="#">Learn More</a></button>
     </div>  
-    
 
-    <div class="feat_img">
-        <img src="{% static "RoboStock/Images/image_1.png" %}" alt="image_1" class="feature_img">
-    </div>
+</div>
 
+<div class="contact">
+    <h3>Still haven't found the answer to your question?</h3>
+    <button class="contact-us"><a href="#">Contact US</a></button>
 </div>
 
 {%endblock%}
